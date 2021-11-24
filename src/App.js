@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import Routers from './routers';
+
+import SideBar from './views/components/SideBar';
+import ScrollToTop from './utils/ScrollToTop';
+import { ProtectedComponent } from './utils/Protected';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const { isLogged } = useSelector(state => state.auth);
+	return (
+		<Router>
+			<ScrollToTop />
+			<ProtectedComponent dependency={isLogged}>
+				<SideBar />
+			</ProtectedComponent>
+			<Routers />
+		</Router>
+	);
 }
 
 export default App;

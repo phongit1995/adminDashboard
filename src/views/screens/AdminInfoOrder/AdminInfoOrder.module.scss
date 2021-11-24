@@ -1,0 +1,19 @@
+.buttonGroup {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	font-size: 0.7rem;
+
+	button + button {
+		margin-left: 0.5rem;
+	}
+}
+
+.textArea {
+	height: 180px;
+	resize: none;
+}
+
+.form {
+	border-bottom: solid 1px #ccc;
+}

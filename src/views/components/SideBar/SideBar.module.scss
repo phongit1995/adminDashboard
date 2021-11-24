@@ -1,0 +1,39 @@
+@import '../../../style/variables';
+
+.main {
+	position: fixed;
+	background-color: #fff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	height: 100%;
+}
+
+.sideBar {
+	width: $widthSideBar;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.item {
+	margin-bottom: 2rem;
+	width: 100%;
+
+	a {
+		display: block;
+		font-size: 0.8rem;
+		text-align: center;
+		padding: 0.5rem 1rem;
+		background-color: rgb(160, 160, 160);
+		border-radius: 4rem;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+}
