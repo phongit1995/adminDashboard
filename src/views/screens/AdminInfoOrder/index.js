@@ -5,6 +5,7 @@ import FormInput from './components/FormInput';
 import FormInput2 from './components/FormInput2';
 import FormSelect from './components/FormSelect';
 import Info from './components/Info';
+import ListOrder from '../../components/ListOrder';
 import styles from './AdminInfoOrder.module.scss';
 
 function AdminInfoOrderPage() {
@@ -16,6 +17,9 @@ function AdminInfoOrderPage() {
 					<FormInput2 />
 					<FormSelect />
 					<Info />
+				</div>
+				<div>
+					<ListOrder />
 				</div>
 			</section>
 		</MainPage>

@@ -43,12 +43,16 @@ function AdminProductsPage() {
 							<tr key={item._id}>
 								<td>{item.name}</td>
 								<td>{item.quantity}</td>
-								<td>Otto</td>
+								<td>{item.totalPrice}</td>
+								<td>{item.estimatedWeight}</td>
+								<td>{item.fixedWeight}</td>
 								<td>@mdo</td>
 								<td>@mdo</td>
-								<td>@mdo</td>
-								<td>@mdo</td>
-								<td>@mdo</td>
+								<td>
+									{new Date(
+										item.orderDate,
+									).toLocaleDateString('en-GB')}
+								</td>
 								<td>@mdo</td>
 								<td>@mdo</td>
 								<td>{item.status}</td>

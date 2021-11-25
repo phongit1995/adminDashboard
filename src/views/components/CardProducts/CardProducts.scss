@@ -1,0 +1,14 @@
+.card-products {
+	.img-products {
+		background-color: rgb(240, 240, 240);
+	}
+}
+
+.card-products + .card-products {
+	margin-top: 2rem;
+}
+
+.textarea-card {
+	height: 180px;
+	resize: none;
+}
