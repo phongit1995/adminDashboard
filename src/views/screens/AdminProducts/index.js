@@ -33,29 +33,31 @@ function AdminProductsPage() {
 							<th>Products url</th>
 							<th>Order No</th>
 							<th>Order Date</th>
-							<th>Customer Name</th>
 							<th>PACK NO</th>
 							<th>Status</th>
 						</tr>
 					</thead>
 					<tbody>
 						{listProducts.map(item => (
-							<tr key={item._id}>
-								<td>{item.name}</td>
-								<td>{item.quantity}</td>
-								<td>{item.totalPrice}</td>
-								<td>{item.estimatedWeight}</td>
-								<td>{item.fixedWeight}</td>
-								<td>@mdo</td>
-								<td>@mdo</td>
+							<tr key={item?._id}>
+								<td>{item?.name}</td>
+								<td>{item?.quantity}</td>
+								<td>{item?.totalPrice}</td>
+								<td>{item?.estimatedWeight}</td>
+								<td>{item?.fixedWeight}</td>
+								<td>{item?.url}</td>
 								<td>
 									{new Date(
-										item.orderDate,
+										item?.orderDate,
 									).toLocaleDateString('en-GB')}
 								</td>
-								<td>@mdo</td>
-								<td>@mdo</td>
-								<td>{item.status}</td>
+								<td>
+									{new Date(
+										item?.orderDate,
+									).toLocaleDateString('en-GB')}
+								</td>
+								<td>{item?.pack?.packNo}</td>
+								<td>{item?.status}</td>
 							</tr>
 						))}
 					</tbody>

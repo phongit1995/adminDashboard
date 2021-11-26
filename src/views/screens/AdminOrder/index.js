@@ -68,7 +68,7 @@ function AdminOrderPage() {
 										item.deliveryDate,
 									).toLocaleDateString('en-GB')}
 								</td>
-								<td>@mdo</td>
+								<td>{item.deliveryTime}</td>
 								<td>{item.status}</td>
 							</tr>
 						))}
