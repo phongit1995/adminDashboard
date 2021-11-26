@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 import MainPage from '../../components/MainPage';
 import FormInput from './components/FormInput';
@@ -21,6 +22,7 @@ function AdminInfoOrderPage() {
 				<div>
 					<ListOrder />
 				</div>
+				<Button>商品追加</Button>
 			</section>
 		</MainPage>
 	);

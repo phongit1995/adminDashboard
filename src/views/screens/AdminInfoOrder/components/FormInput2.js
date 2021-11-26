@@ -12,37 +12,37 @@ function FormInput2() {
 						<div className="row">
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order no</Form.Label>
+									<Form.Label>Customer name</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order date</Form.Label>
+									<Form.Label>Customer Line Name</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order date</Form.Label>
+									<Form.Label>Customer e-mail</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order no</Form.Label>
+									<Form.Label>Address</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order date</Form.Label>
+									<Form.Label>TEL</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order date</Form.Label>
+									<Form.Label>Bill PDF URL</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>

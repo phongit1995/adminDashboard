@@ -12,43 +12,43 @@ function Info() {
 						<div className="row">
 							<div className="col col-lg-12">
 								<div className="mb-3">
-									<p>Order no</p>
+									<p>Total product price</p>
 									<p> Text </p>
 								</div>
 							</div>
 							<div className="col col-lg-4">
 								<div className="mb-3">
-									<p>Order date</p>
+									<p>Estimated total weight</p>
 									<p> Text </p>
 								</div>
 							</div>
 							<div className="col col-lg-4 offset-md-4">
 								<div className="mb-3">
-									<p>Order date</p>
+									<p>Estimated ship fee</p>
 									<p> Text </p>
 								</div>
 							</div>
 							<div className="col col-lg-2">
 								<div className="mb-3">
-									<p>Order no</p>
+									<p>Fixed total weight</p>
 									<p> Text </p>
 								</div>
 							</div>
 							<div className="col col-lg-2">
 								<div className="mb-3">
-									<p>Order date</p>
+									<p>Fixed ship fee</p>
 									<p> Text </p>
 								</div>
 							</div>
 							<div className="col col-lg-4">
 								<Form.Group className="mb-3">
-									<Form.Label>Order date</Form.Label>
+									<Form.Label>Extra ship fee</Form.Label>
 									<Form.Control type="text" />
 								</Form.Group>
 							</div>
 							<div className="col col-lg-4">
 								<div className="mb-3">
-									<p>Order date</p>
+									<p>Fixed total fee</p>
 									<p> Text </p>
 								</div>
 							</div>

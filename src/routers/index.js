@@ -6,7 +6,7 @@ import { ProtectedRoute } from '../utils/Protected';
 import AdminOrderPage from '../views/screens/AdminOrder';
 import AdminInfoOrderPage from '../views/screens/AdminInfoOrder';
 import AdminPackPage from '../views/screens/AdminPagePack';
-import AdminInfoPackPage from '../views/screens/AdminInfoPack';
+import AdminCreatePackPage from '../views/screens/AdminCreatePack';
 import AdminProductsPage from '../views/screens/AdminProducts';
 import LoginPage from '../views/screens/Login';
 
@@ -35,7 +35,7 @@ function Routers() {
 			>
 				<Route
 					exact
-					path="/order/:id"
+					path="/order/new"
 					element={<AdminInfoOrderPage />}
 				></Route>
 			</Route>
@@ -72,15 +72,15 @@ function Routers() {
 
 			<Route
 				exact
-				path="/page-pack/:id"
+				path="/pack/new"
 				element={
 					<ProtectedRoute redirect="/login" dependency={isLogged} />
 				}
 			>
 				<Route
 					exact
-					path="/page-pack/:id"
-					element={<AdminInfoPackPage />}
+					path="/pack/new"
+					element={<AdminCreatePackPage />}
 				></Route>
 			</Route>
 
