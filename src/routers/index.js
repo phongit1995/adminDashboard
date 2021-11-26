@@ -28,14 +28,14 @@ function Routers() {
 
 			<Route
 				exact
-				path="/"
+				path="/order/:id"
 				element={
 					<ProtectedRoute redirect="/login" dependency={isLogged} />
 				}
 			>
 				<Route
 					exact
-					path="/order/new"
+					path="/order/:id"
 					element={<AdminInfoOrderPage />}
 				></Route>
 			</Route>

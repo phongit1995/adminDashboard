@@ -26,9 +26,6 @@ function AdminOrderPage() {
 			<section>
 				<div className={styles.title}>
 					<h1>Order page</h1>{' '}
-					<NavLink to="/order/new" className="btn btn-primary">
-						新規作成
-					</NavLink>
 				</div>
 				<Table striped bordered hover>
 					<thead>
@@ -46,10 +43,10 @@ function AdminOrderPage() {
 						</tr>
 					</thead>
 					<tbody>
-						{list.map((item, index) => (
+						{list.map(item => (
 							<tr key={item._id}>
 								<td>
-									<NavLink to="/order/alskdh">
+									<NavLink to={`/order/${item._id}`}>
 										{item.orderNo}
 									</NavLink>
 								</td>

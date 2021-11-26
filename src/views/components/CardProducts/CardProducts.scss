@@ -1,4 +1,7 @@
 .card-products {
+	border-bottom: solid #ccc 1px;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 	.img-products {
 		background-color: rgb(240, 240, 240);
 	}
@@ -11,4 +14,16 @@
 .textarea-card {
 	height: 180px;
 	resize: none;
+}
+
+.group-btn--products {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding-bottom: 1rem;
+
+	button {
+		min-width: 7rem;
+	}
 }

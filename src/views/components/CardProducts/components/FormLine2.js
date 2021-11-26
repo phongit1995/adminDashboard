@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 
 import '../CardProducts.scss';
 
-function FormLine2() {
+function FormLine2({ product }) {
 	return (
 		<Form>
 			<div className="card-line row">
@@ -12,25 +12,37 @@ function FormLine2() {
 						<div className="col col-lg-3">
 							<Form.Group className="mb-2">
 								<Form.Label>Product url</Form.Label>
-								<Form.Control type="text" />
+								<Form.Control
+									type="text"
+									defaultValue={product.url}
+								/>
 							</Form.Group>
 						</div>
 						<div className="col col-lg-3">
 							<Form.Group className="mb-2">
 								<Form.Label>Estimated weight</Form.Label>
-								<Form.Control type="text" />
+								<Form.Control
+									type="text"
+									defaultValue={product.estimatedWeight}
+								/>
 							</Form.Group>
 						</div>
 						<div className="col col-lg-3">
 							<Form.Group className="mb-2">
 								<Form.Label>Measurement weight</Form.Label>
-								<Form.Control type="text" />
+								<Form.Control
+									type="text"
+									defaultValue={product.measurementWeight}
+								/>
 							</Form.Group>
 						</div>
 						<div className="col col-lg-3">
 							<Form.Group className="mb-2">
 								<Form.Label>Ship weight</Form.Label>
-								<Form.Control type="text" />
+								<Form.Control
+									type="text"
+									defaultValue={product.shipWeight}
+								/>
 							</Form.Group>
 						</div>
 					</div>

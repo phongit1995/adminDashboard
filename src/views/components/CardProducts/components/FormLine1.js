@@ -3,9 +3,10 @@ import { Form } from 'react-bootstrap';
 
 import '../CardProducts.scss';
 
-function FormLine1() {
+function FormLine1({ product }) {
 	return (
 		<Form>
+			{console.log(product)}
 			<div className="title">
 				<strong>Text 1</strong> <span>No. 1</span>
 			</div>
@@ -13,7 +14,10 @@ function FormLine1() {
 				<div className="col col-lg-4">
 					<Form.Group className="mb-2">
 						<Form.Label>Product name</Form.Label>
-						<Form.Control type="text" />
+						<Form.Control
+							type="text"
+							defaultValue={product?.name}
+						/>
 					</Form.Group>
 				</div>
 				<div className="col col-lg-8">
@@ -22,20 +26,32 @@ function FormLine1() {
 							<div className="row">
 								<div className="col col-lg-4">
 									<Form.Group className="mb-2">
-										<Form.Label>Product name</Form.Label>
-										<Form.Control type="text" />
+										<Form.Label>Quantity</Form.Label>
+										<Form.Control
+											type="text"
+											defaultValue={product?.quantity}
+										/>
 									</Form.Group>
 								</div>
 								<div className="col col-lg-4">
 									<Form.Group className="mb-2">
-										<Form.Label>Product name</Form.Label>
-										<Form.Control type="text" />
+										<Form.Label>Price</Form.Label>
+										<Form.Control
+											type="text"
+											defaultValue={product?.price}
+										/>
 									</Form.Group>
 								</div>
 								<div className="col col-lg-4">
 									<Form.Group className="mb-2">
-										<Form.Label>Product name</Form.Label>
-										<Form.Control type="text" />
+										<Form.Label>Total price</Form.Label>
+										<Form.Control
+											type="text"
+											defaultValue={
+												product?.price *
+												product?.quantity
+											}
+										/>
 									</Form.Group>
 								</div>
 							</div>

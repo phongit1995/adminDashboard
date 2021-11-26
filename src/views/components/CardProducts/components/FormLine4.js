@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 
 import '../CardProducts.scss';
 
-function FormLine4() {
+function FormLine4({ product }) {
 	return (
 		<Form>
 			<div className="card-line row">
@@ -11,7 +11,8 @@ function FormLine4() {
 					<Form.Group className="mb-3">
 						<Form.Control
 							as="textarea"
-							className="textarea-card "
+							className="textarea-card"
+							defaultValue={product.text}
 						/>
 					</Form.Group>
 				</div>
@@ -19,9 +20,15 @@ function FormLine4() {
 					<Form.Group className="mb-3">
 						<Form.Control
 							as="textarea"
-							className="textarea-card "
+							className="textarea-card"
+							defaultValue={product.text}
 						/>
 					</Form.Group>
+				</div>
+				<div className="col col-lg-4">
+					<div className="group-btn--products">
+						<button className="btn btn-danger">削除</button>
+					</div>
 				</div>
 			</div>
 		</Form>

@@ -13,6 +13,15 @@ const orderAPI = {
 			},
 		});
 	},
+	getDetial: (id, tokenAxios) => {
+		const url = `${routeName}/${id}`;
+		return axiosClient.get(url, {
+			cancelToken: tokenAxios,
+			headers: {
+				Authorization: 'Bearer ' + getItemStorage('accessToken'),
+			},
+		});
+	},
 };
 
 export default orderAPI;
