@@ -1,1 +1,1 @@
-export const API_URL = 'http://172.104.185.77';
+export const API_URL = 'http://api.direct.goaw.net';
